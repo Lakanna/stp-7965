@@ -40,10 +40,21 @@
     padding-right: 36px;
   }
 }
+
 body.polisy h1 {
-  @include font(32, 30);
+  @include font(20, 30);
+
+  @include media(desktop) {
+    @include font(32, 30);
+  }
 }
 
 body.polisy h2 {
-  font-size: 20px;
+  font-size: 14px;
+  font-weight: 500;
+
+  @include media(desktop) {
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
