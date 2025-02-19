@@ -1,8 +1,9 @@
 @import './header.scss';
 @import './vite-promo.scss';
+@import './privacy-policy.scss';
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -15,6 +16,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  background-color: #0a1921;
+  color: #ffffff;
 }
 
 .container {
@@ -24,8 +28,22 @@
   margin-left: auto;
   margin-right: auto;
 
+  background-image: linear-gradient(
+    92.58deg,
+    #111a1f 0.48%,
+    #375463 48.33%,
+    #111a1f 96.17%
+  );
   @include media(desktop) {
+    width: 1200px;
     padding-left: 36px;
     padding-right: 36px;
   }
+}
+body.polisy h1 {
+  @include font(32, 30);
+}
+
+body.polisy h2 {
+  font-size: 20px;
 }
